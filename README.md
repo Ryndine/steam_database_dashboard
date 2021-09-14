@@ -1,7 +1,5 @@
 # Project 3: Steam Database Breakdown
-## Anny Tritchler | Ryan Mangeno | Melissa Cardenas
-
----
+[Ryan Mangeno](https://github.com/Ryndine) | [Anny Tritchler](https://github.com/tritchlin/) | [Melissa](Melissa Cardenas)
 
 ## Objective:
 This project was to create a platform to observe correlations within the interaction between steams’ user base and all the video games they play.
