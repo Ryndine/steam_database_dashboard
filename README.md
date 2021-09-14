@@ -4,8 +4,9 @@
 ## Objective:
 This project was to create a platform to observe correlations within the interaction between steams’ user base and all the video games they play.
 
-## NOTE:
+### NOTE:
 This project will not run without the database.
+
 Current interation of project is just a small view into a larger data.
 
 ## Troubles n’ Turmoil
