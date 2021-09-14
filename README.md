@@ -1,5 +1,5 @@
 # Steam Database Breakdown
-[Ryan Mangeno](https://github.com/Ryndine) | [Anny Tritchler](https://github.com/tritchlin/) | [Melissa Cardenas](http://)
+[Ryan Mangeno](https://github.com/Ryndine) | [Anny Tritchler](https://github.com/tritchlin/) | [Melissa Cardenas](https://github.com/melcardenas28)
 
 ## Objective:
 This project was to create a platform to observe correlations within the interaction between steams’ user base and all the video games they play.
