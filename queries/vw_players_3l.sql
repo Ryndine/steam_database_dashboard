@@ -1,0 +1,1 @@
+select * from vw_players_3l limit 100000;
