@@ -6,6 +6,7 @@ This project was to create a platform to observe correlations within the interac
 
 ## NOTE:
 This project will not run without the database.
+Current interation of project is just a small view into a larger data.
 
 ## Troubles n’ Turmoil
 ### Initial Problem
