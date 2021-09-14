@@ -1,4 +1,4 @@
-# Project 3: Steam Database Breakdown
+# Steam Database Breakdown
 [Ryan Mangeno](https://github.com/Ryndine) | [Anny Tritchler](https://github.com/tritchlin/) | [Melissa Cardenas](http://)
 
 ## Objective:
