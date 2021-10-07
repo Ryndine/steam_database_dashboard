@@ -9,6 +9,19 @@ This project will not run without the database.
 
 Current iteration of project is just a small view into a larger data.
 
+## Assets:
+160GB database with video game and player data on Steam.  
+https://academictorrents.com/details/eba3b48fcdaa9e69a927051f1678251a86a546f3
+
+GeoJSON template for every country.  
+https://github.com/johan/world.geo.json/blob/master/countries.geo.json
+
+Alpha 2 and Alpha 3 codes for every country:  
+https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv
+
+## Tools, Libraries, Databases, Etc:
+Flask, Dash, Dash Components, Dash Bootstrap, Plotly, Python, HTML, CSS, Javascript, Bootstrap, Sqlite
+
 ## Troubles n’ Turmoil
 ### Initial Problem
 File is a MySQL dump that is inaccessible due to scale (160gb file with data on 108 million users).
@@ -50,18 +63,5 @@ Then get a csv file that contains ISO Alpha 2 and ISO Alpha 3 data. https://gist
 From there make a new table for Steam's LocCountryCode's ISO Alpha 2 on the csv file’s Alpha 2, in order to get table with Steam locations in Alpha 3 format, for pairing with the GeoJSON’s Alpha 3.
 
 ### Flask & Dash Woes
-When finding out that Flask doesn’t have callbacks, we had to look into Dash. However Dash doesn’t have “.route” so we hooked dash to flask in order bypass both of these issues. 
-
-## Assets:
-160GB database with video game and player data on Steam.  
-https://academictorrents.com/details/eba3b48fcdaa9e69a927051f1678251a86a546f3
-
-GeoJSON template for every country.  
-https://github.com/johan/world.geo.json/blob/master/countries.geo.json
-
-Alpha 2 and Alpha 3 codes for every country:  
-https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv
-
-## Tools, Libraries, Databases, Etc:
-Flask, Dash, Dash Components, Dash Bootstrap, Plotly, Python, HTML, CSS, Javascript, Bootstrap, Sqlite
+When finding out that Flask doesn’t have callbacks, we had to look into Dash. However Dash doesn’t have “.route” so we hooked dash to flask in order deal with both of these issues. 
 
