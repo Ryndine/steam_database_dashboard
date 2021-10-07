@@ -55,8 +55,10 @@ When finding out that Flask doesn’t have callbacks, we had to look into Dash. 
 ## Assets:
 160GB database with video game and player data on Steam.
 https://academictorrents.com/details/eba3b48fcdaa9e69a927051f1678251a86a546f3
+
 GeoJSON template for every country.
 https://github.com/johan/world.geo.json/blob/master/countries.geo.json
+
 Alpha 2 and Alpha 3 codes for every country:
 https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv
 
