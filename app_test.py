@@ -10,7 +10,9 @@ import plotly.graph_objects as go
 import json
 from q_functions_split import db_interface
 from layouts import dashapp
-steamdb = db_interface('steamdata.db')
+# steamdb = db_interface('steamdata.db')
+steamdb = db_interface('D:\steam\steamdata.db')
+
 
 steamdb.set_query(text='select * from games_genres')
 genres = steamdb.get_df().Genre.unique()

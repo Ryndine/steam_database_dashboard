@@ -13,7 +13,9 @@ import json
 # Add your data
 #####################################
 
-steamdb = db_interface('steamdata.db')
+# steamdb = db_interface('steamdata.db')
+steamdb = db_interface('D:\steam\steamdata.db')
+
 
 steamdb.set_query(text='select * from games_genres')
 genres = steamdb.get_df().Genre.unique()

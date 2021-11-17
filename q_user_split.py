@@ -1,7 +1,9 @@
 from q_functions_split import db_interface, db_query
 
 # --- LEAVE ALONE ---
-steamdb = db_interface('steamdata.db')
+# steamdb = db_interface('steamdata.db')
+steamdb = db_interface('D:\steam\steamdata.db')
+
 
 # --- FOR DF/CSV/JSON, PUT SQL FILE PATH HERE ---
 steamdb.set_query('test.sql')

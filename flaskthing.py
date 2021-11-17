@@ -2,7 +2,8 @@ from flask import Flask, render_template
 from q_functions_split import db_interface
 
 app = Flask(__name__)
-steamdb = db_interface('steamdata.db')
+# steamdb = db_interface('steamdata.db')
+steamdb = db_interface('D:\steam\steamdata.db')
 
 @app.route('/')
 def hello():
