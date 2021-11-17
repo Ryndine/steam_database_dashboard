@@ -2,7 +2,7 @@
 [Ryan Mangeno](https://github.com/Ryndine) | [Anny Tritchler](https://github.com/tritchlin/) | [Melissa Cardenas](https://github.com/melcardenas28)
 
 ## Objective:
-This project was to create a platform to observe correlations within the interaction between steams’ user base and all the video games they play.
+This project was to create a platform to observe correlations within the interaction between steams’ user base, developers, publishers, and the videos games being played.
 
 ### NOTE:
 This project will not run without the database.
