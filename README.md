@@ -22,6 +22,9 @@ https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv
 ## Tools, Libraries, Databases, Etc:
 Flask, Dash, Dash Components, Dash Bootstrap, Plotly, Python, HTML, CSS, Javascript, Bootstrap, Sqlite
 
+## Current Product:
+![Dashboard](https://github.com/Ryndine/steam_analysis_database/blob/main/resources/pictures/dashboard-thumbnail.png)
+
 ## Troubles n’ Turmoil
 ### Initial Problem
 File is a MySQL dump that is inaccessible due to scale (160gb file with data on 108 million users).
