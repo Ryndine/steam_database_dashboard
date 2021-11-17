@@ -60,7 +60,7 @@ Games_1 and Friends use very large tables with slow query times.
 From this point we needed to create indicies for all the tables on AppID and SteamID for faster queries. To improve speeds further, new tables were joined, and the use of views was implemented for faster callbacks.
 
 ### Choropleth GeoJSON and Steam Locations:
-There is not geojson for the steam data to plot on to a map.  
+There is no geojson for the steam data to plot on to a map.  
 We had to find a geojson for all the countries in the world. https://github.com/johan/world.geo.json/blob/master/countries.geo.json  
 Then get a csv file that contains ISO Alpha 2 and ISO Alpha 3 data. https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv  
 From there make a new table for Steam's LocCountryCode's ISO Alpha 2 on the csv file’s Alpha 2, in order to get table with Steam locations in Alpha 3 format, for pairing with the GeoJSON’s Alpha 3.
