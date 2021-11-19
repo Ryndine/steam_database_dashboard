@@ -3,7 +3,8 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from app import app, server 
-#import your navigation, styles and layouts from layouts.py here
+
+# import your navigation, styles and layouts from layouts.py here
 from layouts import nav_bar, layout1, layout2, CONTENT_STYLE 
 # import callbacks
 
@@ -16,7 +17,7 @@ app.layout = html.Div([
 ])
 
 # This callback changes the layout of the page based on the URL
-# For each layout read the current URL page "http://0.0.0.0:8000/pagename" and return the layout
+# For each layout read the current URL page "http://0.0.0.0:5500/pagename" and return the layout
 @app.callback(Output('page-content', 'children'), #this changes the content
               [Input('url', 'pathname')]) #this listens for the url in use
 def display_page(pathname):
@@ -29,7 +30,7 @@ def display_page(pathname):
     else:
         return '404' #If page not found return 404
 
-#Runs the server at http://0.0.0.0:8000/      
+#Runs the server     
 if __name__ == '__main__':
     app.run_server(host='127.0.0.1', port='5500', debug=False)
     # app.run_server(host='0.0.0.0', port='8000', debug=False)

@@ -162,5 +162,6 @@ class db_interface:
         except Exception as e:
             raise e
         finally:
+            
             #? do something with res? return result code?
             conn.close()

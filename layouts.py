@@ -9,10 +9,7 @@ from q_functions_split import db_interface
 from dash.dependencies import Input, Output
 import json
 
-#####################################
-# Add your data
-#####################################
-
+# Data
 # steamdb = db_interface('steamdata.db')
 steamdb = db_interface('D:\steam\steamdata.db')
 
@@ -22,9 +19,7 @@ genres = steamdb.get_df().Genre.unique()
 
 geojson = json.loads(open("resources\countries.geojson", 'r').read())
 
-#####################################
 # Styles & Colors
-#####################################
 
 # NAVBAR_STYLE = {
 #     "position": "fixed",
@@ -43,9 +38,8 @@ CONTENT_STYLE = {
     "margin-right": "2rem",
 }
 
-#####################################
-# Create Auxiliary Components Here
-#####################################
+# Auxiliary Components Here
+
 options = [{'value': x, 'label': x} for x in genres]
 # items = [dbc.DropdownMenuItem(i) for i in options] #remove curly brackets on this line
 
@@ -86,7 +80,7 @@ def nav_bar():
     )   
     return navbar
 
-#graph 1 - Choropleth Map
+# Graph 1 - Choropleth Map
 @app.callback(
     Output("choropleth", "figure"), 
     [Input("genre", "value")])
@@ -115,7 +109,7 @@ def display_choropleth(genre):
     
     return fig
 
-#graph 2 - Country Bar Graph
+# Graph 2 - Country Bar Graph
 @app.callback(
     Output("bar", "figure"), 
     [Input("genre", "value")])
@@ -149,7 +143,7 @@ def display_bargraph(genre):
 
     return fig
 
-#graph 3 - Melissa Chart
+# Graph 3 - Melissa's Graph
 pie_query = f"select * from vw_genre_achieve;"
 steamdb.set_query(text = pie_query)
 pie_df = steamdb.get_df()
@@ -170,9 +164,7 @@ pie_fig.update_layout(
     margin={"r":0,"t":0,"l":0,"b":0},
 )
 
-#####################################
-# Create Page Layouts Here
-#####################################
+# Page Layouts
 first_card = dbc.CardBody(
         [
             html.P("Video Game Sales by Country", className="card-title"),
