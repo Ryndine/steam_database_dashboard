@@ -84,6 +84,7 @@ def nav_bar():
 @app.callback(
     Output("choropleth", "figure"), 
     [Input("genre", "value")])
+
 def display_choropleth(genre):
     query = f"select * from vw_genre_ownership_by_country where genre = '{genre}';"
     steamdb.set_query(text = query)
@@ -143,7 +144,7 @@ def display_bargraph(genre):
 
     return fig
 
-# Graph 3 - Melissa's Graph
+# Graph 3 - Melissa's Pie Graph
 pie_query = f"select * from vw_genre_achieve;"
 steamdb.set_query(text = pie_query)
 pie_df = steamdb.get_df()
@@ -236,49 +237,3 @@ layout1 = dbc.Container(
         ),
     ],
 )
-
-
-layout2 = html.Div(
-    [
-        html.H2('Page 2'),
-        html.Hr(),
-        dbc.Container(
-            [
-                dbc.Row(
-                    [
-                        dbc.Col(
-                            [
-                                html.H4('Country'),
-                                html.Hr(),
-                                dcc.Dropdown(
-                                    id='page2-dropdown',
-                                    options=[
-                                        {'label': '{}'.format(i), 'value': i} for i in [
-                                        'United States', 'Canada', 'Mexico'
-                                        ]
-        ]
-                                ),
-                                html.Div(id='selected-dropdown')
-                            ],
-                            width=6
-                        ),
-                        dbc.Col(
-                            [
-                                html.H4('Fruit'),
-                                html.Hr(),
-                                dcc.RadioItems(
-                                    id='page2-buttons',
-                                    options = [
-                                        {'label':'{}'.format(i), 'value': i} for i in [
-                                        'Yes ', 'No ', 'Maybe '
-                                        ]
-                                    ]
-                                ),
-                                html.Div(id='selected-button')
-                            ],
-                        )
-                    ]
-                ),
-            ]
-        )
-    ])
