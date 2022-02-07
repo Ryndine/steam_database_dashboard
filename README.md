@@ -71,4 +71,4 @@ From there make a new table for Steam's LocCountryCode's ISO Alpha 2 on the csv 
 When finding out that Flask doesn’t have callbacks, we had to look into Dash. However Dash doesn’t have “.route” so we hooked dash to flask in order deal with both of these issues. 
 
 ## Progress:
-With bootcamp over, I may return to flesh this project out and present the stories I wanted to do but didn't have time for.
+I'll return to flesh this project out and present the stories I wanted to do but didn't have time for. For now I'm focusing on creating a place to host this project.
