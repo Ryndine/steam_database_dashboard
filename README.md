@@ -31,7 +31,7 @@ File is a MySQL dump that is inaccessible due to scale (160gb file with data on 
 We used a lightweight program to access the database and divide the dump into smaller files for each tables insert. This however did not solve accessibility due to Memory Issues for all group members.
 
 ### Insufficient Memory
-In order to read the MySQL files aa python script was made to do it in chunks. We created a sample file containing a set number of lines, trimmed off the last incomplete insert statement, then save file. Using that we now had a working chunksize to pass through the function.
+In order to read the MySQL files a python script was made to do it in chunks. We created a sample file containing a set number of lines, trimmed off the last incomplete insert statement, then save file. Using that we now had a working chunksize to pass through the function.
 Using the new chunksize, we could pull the schema out of the tables and delete it for later editing during sqlite conversion. Since the insert statements are same those could be left alone.
 When the script runs, a new sqlite schema would be inserted which would allow all the sql files to be converted into workable sqlite files. Using chunksizes allowed us to do this for the 60GB files as well bypassing the memory issues.
 
